@@ -14,6 +14,6 @@ spec:
         - image: schoolofdevops/vote:v4
           name: vote
           envFrom:
-          - configMapRef:
-            name: vote
-            optional: true
+            - configMapRef:
+                name: vote
+                optional: true
