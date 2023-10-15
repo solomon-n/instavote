@@ -7,7 +7,7 @@ image:
   repository: schoolofdevops/vote-result:latest
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "main-c68a2caa-1697391490" # {"$imagepolicy": "flux-system:result:tag"}
+  tag: "latest" # {"$imagepolicy": "flux-system:result:tag"}
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
