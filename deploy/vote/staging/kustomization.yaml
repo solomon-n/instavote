@@ -9,7 +9,7 @@ namespace: instavote
 images:
   - name: schoolofdevops/vote
     newName: solomonabt/vote
-    newTag: v4
+    newTag: v4 # {"$imagepolicy": "flux-system:vote:tag"}
 replicas:
   - name: vote
     count: 4
