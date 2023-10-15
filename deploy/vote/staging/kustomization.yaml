@@ -8,6 +8,7 @@ patchesStrategicMerge:
 namespace: instavote
 images:
   - name: schoolofdevops/vote
+    newName: solomonabt/vote
     newTag: v4
 replicas:
   - name: vote
