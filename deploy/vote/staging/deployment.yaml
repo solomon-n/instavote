@@ -9,6 +9,8 @@ spec:
   replicas: 5
   template:
     spec:
+      imagePullSecrets:
+        - name: dockerhub-creds
       containers:
       - image: schoolofdevops/vote:v3
         name: vote
@@ -16,5 +18,3 @@ spec:
           - configMapRef:
               name: vote
               optional: true
-      imagePullSecrets:
-        - name: dockerhub-creds
