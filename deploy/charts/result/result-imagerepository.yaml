@@ -1,0 +1,14 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: result
+  namespace: flux-system
+spec:
+  exclusionList:
+  - ^.*\.sig$
+  image: solomonabt/result
+  interval: 1m0s
+  provider: generic
+  secretRef:
+    name: docker-pull-secret
