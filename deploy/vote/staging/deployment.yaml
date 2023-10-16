@@ -17,4 +17,4 @@ spec:
               name: vote
               optional: true
       imagePullSecrets:
-        - name: docker-pull-secret
+        - name: dockerhub-creds
