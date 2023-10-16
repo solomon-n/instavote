@@ -16,5 +16,3 @@ spec:
             - configMapRef:
                 name: vote
                 optional: true
-      imagePullSecrets:
-        - name: dockerhub-pull-secret
