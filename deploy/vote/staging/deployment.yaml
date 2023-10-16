@@ -6,15 +6,11 @@ metadata:
     app: vote
   name: vote
 spec:
-  minReadySeconds: 20
-  replicas: 3
-  selector:
-    matchLabels:
-      app: vote
+  replicas: 5
   template:
     spec:
       containers:
-        - image: schoolofdevops/vote:v4
+        - image: schoolofdevops/vote:v3
           name: vote
           envFrom:
             - configMapRef:

@@ -6,9 +6,6 @@ metadata:
     app: vote
   name: vote
 spec:
-  selector:
-    matchLabels:
-      app: vote
   minReadySeconds: 20
   replicas: 3
   template:
