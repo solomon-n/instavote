@@ -10,11 +10,11 @@ spec:
   template:
     spec:
       containers:
-        imagePullSecrets:
-          - name: docker-pull-secret
-        - image: schoolofdevops/vote:v3
-          name: vote
-          envFrom:
-            - configMapRef:
-                name: vote
-                optional: true
+      - image: schoolofdevops/vote:v3
+        name: vote
+        envFrom:
+          - configMapRef:
+              name: vote
+              optional: true
+      imagePullSecrets:
+        - name: docker-pull-secret
