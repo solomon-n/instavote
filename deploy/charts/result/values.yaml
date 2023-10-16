@@ -7,7 +7,7 @@ image:
   repository: solomonabt/vote-result
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest" # {"$imagepolicy": "flux-system:result:tag"}
+  tag: "main-0e0baa3f-1697454122" # {"$imagepolicy": "flux-system:result:tag"}
 imagePullSecrets: [{name: "docker-pull-secret"}]
 nameOverride: ""
 fullnameOverride: ""
